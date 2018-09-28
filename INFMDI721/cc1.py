@@ -23,11 +23,10 @@ def array_front9(nums):
 # that a substring length 2 appears  in the string and also as
 # the last 2 chars of the string, so "hixxxhi" yields 1 (we won't count the end substring).
 def last2(string):
-    print('bbbbbbb'+string[:2])
-    pattern=string[:2]
+    pattern=string[-2:]
     cnt=0
 
-    for i in range(0, len(string), 2):
+    for i in range(0, len(string)-2, 2):
         str=string[i:i+2]
         if str == pattern:
             cnt+=1
@@ -68,11 +67,34 @@ def number2digits(number):
 #English is translated to Pig Latin by taking the first letter of every word,
 #moving it to the end of the word and adding 'ay'
 def pigLatin(text):
-  return
+    words=text.split(' ')
+    output = ''
+    #English
+    for w  in words:
+        if(w[-2:]=='ay'):
+            output = output + w.pop(2)
+    #Pig Latin
+        else:
+            output = output + ' ' + w[1:]+w[-1:]+'ay'
+    return output
+
+
 
 
 #write fizbuzz programm
-def fizbuzz():
+def fizbuzz(num):
+    fizz=False
+    buzz=False
+
+    if num % 2 == 0:
+        fizz=True
+        print('fizz')
+    if num % 3 == 0:
+        buzz=True
+        print('buzz')
+    if fizz and buzz:
+        print('fizzbuzz')
+
     return
 
 
@@ -117,7 +139,7 @@ def flatten():
 
 # Here's our "unit tests".
 class Lesson1Tests(unittest.TestCase):
-    fizbuzz()
+    fizbuzz(60)
     def testArrayFront9(self):
         self.assertEqual(array_front9([1, 2, 9, 3, 4]) , True)
         self.assertEqual(array_front9([1, 2, 3, 4, 9]) , False)
