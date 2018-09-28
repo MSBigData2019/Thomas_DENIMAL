@@ -26,6 +26,7 @@ def last2(string):
     print('bbbbbbb'+string[:2])
     pattern=string[:2]
     cnt=0
+
     for i in range(0, len(string), 2):
         str=string[i:i+2]
         if str == pattern:
@@ -58,7 +59,10 @@ def length_words(array):
 
 #Write a function that takes a number and returns a list of its digits.
 def number2digits(number):
-  return len(str(number))
+    output=[]
+    for i in str(number):
+        output.append(int(i))
+    return output
 
 #Write function that translates a text to Pig Latin and back.
 #English is translated to Pig Latin by taking the first letter of every word,
