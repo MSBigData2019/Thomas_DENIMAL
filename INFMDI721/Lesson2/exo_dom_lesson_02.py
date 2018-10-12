@@ -165,7 +165,7 @@ def get_nasdaq(soup):
     nasdaq_chg=clean_string(price.find(class_="valueContentPercent").get_text())
     return "Prix Action : "+nasdaq_price+" %chg :"+nasdaq_chg
 
-
+#Give all usefull infos on a company
 def company_info(com):
     r = requests.get(company_url(com))
     soup = BeautifulSoup(r.text, 'html.parser')
