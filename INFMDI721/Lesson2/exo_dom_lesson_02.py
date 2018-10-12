@@ -6,6 +6,9 @@ import sys
 from bs4 import BeautifulSoup
 import re
 
+#Thomas DENIMAL 2018
+
+
 
 #Function to cleanup string of spaces, tab, and other char
 def clean_string(string):
