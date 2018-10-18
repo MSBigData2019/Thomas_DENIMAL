@@ -1,0 +1,32 @@
+=> Interaction avec OMDBapi
+
+
+=> Utiliser postman pour tester les REST API et connaitre le champs json
+
+
+=> JSON : nativement mappable vers un object python
+
+=> dbpedia : api
+
+=> jq pour parser du json et faire du 
+jqplay sur internet
+
+=> IFTTT  & ZAPIER utile pour automatiser des apis
+
+=> python data analysis => le lire
+
+=> tout ramener dans pandas
+=> methodes ultra efficaces 
+
+=> lire  data structure pandas et basic funtionnalities
+http://pandas.pydata.org/pandas-docs/stable/dsintro.html
+
+
+=> Utiliser le multithread pour python : multiprocessing
+=> utiliser p = Pool(5) => 5 threads
+p.map(f,[1,2,3])
+
+
+=> numpy,scipy => librairie qui a fait de python un vrai language scientifique
+
+=> regarder 10 minutes tour sur pandas
